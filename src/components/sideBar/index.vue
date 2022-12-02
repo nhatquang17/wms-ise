@@ -1,5 +1,3 @@
-<!--App.vue = Navbar.vue-->
-
 <template>
   <v-navigation-drawer v-model="drawer" app>
     <router-link class="logo" to="/">
