@@ -1,28 +1,31 @@
-
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import NhapKho from './Nhapkho.vue'
-import TruyXuat from './Truyxuat.vue'
-import CanhBaoHetHang from './Canhbaohethang.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Stock from "../components/page/stock.vue";
+import TruyXuat from "./Truyxuat.vue";
+import CanhBaoHetHang from "./Canhbaohethang.vue";
 //import HomeView from '../views/HomeView.vue'
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
-    {path: '/nhap-kho', name: 'NhapKho', component: NhapKho},
-    {path: '/theo-ma-kho', name: 'TheoMaKho', component: TruyXuat},
-    {path: '/kiem-tra-kha-nang', name: 'KiemTraKhaNang', component: CanhBaoHetHang}
-      
-//     // route level code-splitting
-//     // this generates a separate chunk (about.[hash].js) for this route
-//     // which is lazy-loaded when the route is visited.
-//     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-//   }
-// 
-]
+  { path: "/nhap-kho", name: "Stock", component: Stock },
+  { path: "/xuat-kho", name: "TheoMaKho", component: TruyXuat },
+  {
+    path: "/kiem-tra-kha-nang",
+    name: "KiemTraKhaNang",
+    component: CanhBaoHetHang,
+  },
+
+  //     // route level code-splitting
+  //     // this generates a separate chunk (about.[hash].js) for this route
+  //     // which is lazy-loaded when the route is visited.
+  //     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+  //   }
+  //
+];
 
 const router = new VueRouter({
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
