@@ -38,7 +38,6 @@
       </v-list-group>
       <!-- <DropDown title="QUẢN LÝ TỒN KHO" :items="quanlytonkho" />
       
-        <DropDown title="CẢNH BÁO HẾT HÀNG" :items="canhbaohethang" />
         <DropDown title="CẢNH BÁO HÀNG HẾT HẠN" :items="canhbaohanghethan" /> -->
     </v-list>
 
