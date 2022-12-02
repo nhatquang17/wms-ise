@@ -3,7 +3,6 @@ import VueRouter from "vue-router";
 import Stock from "../components/page/stock.vue";
 import TruyXuat from "./Truyxuat.vue";
 import CanhBaoHetHang from "./Canhbaohethang.vue";
-//import HomeView from '../views/HomeView.vue'
 
 Vue.use(VueRouter);
 
