@@ -24,7 +24,7 @@
         </v-chip>
       </template>
     </v-data-table>
-    <v-btn color="gray">
+    <v-btn color="gray" style="margin: 20px; align-items: center;">
         Xong/Kiểm tra đơn khác
     </v-btn>
     </v-card>

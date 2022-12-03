@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    titlePage: "title nha",
+    titlePage: "QUẢN LÝ VÀ VẬN HÀNH KHO",
     user: {},
   },
   getters: {

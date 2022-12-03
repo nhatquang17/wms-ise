@@ -1,10 +1,11 @@
 <!--App.vue = Navbar.vue-->
 
 <template>
-    <v-app id="inspire">
+    <div id="inspire">
       <v-navigation-drawer permanent
         v-model="drawer"
-        app>
+        app
+        style="width: 300px;">
         <v-list-item >
           <v-list-item-content>
             <v-list-item-title class="text-h6">
@@ -49,11 +50,7 @@
           LOUTUS GROUP
         </v-toolbar-title>
       </v-app-bar>
-  
-      <v-main>
-        <router-view></router-view>
-      </v-main>
-    </v-app>
+    </div>
   </template>
   
   <script>
@@ -109,4 +106,8 @@
   a {
     text-decoration: none;
   }
+  #nspire .v-navigation-drawer__content {
+    width: 300px;
+  }
+
   </style>
