@@ -19,18 +19,27 @@
         </template>
       </v-banner>
       <v-card-text class="lighten-4">
-        <v-sheet max-width="200" height="50" class="mx-auto card-body">
+        <v-sheet max-width="200" height="130" class="mx-auto card-body">
           <div class="submit-btn">
             <v-btn
               :loading="loading3"
               :disabled="loading3"
               color="blue-grey"
               class="ma-2 white--text"
-              @click="loader = 'loading3'"
+              @click="alert = !alert"
             >
               Lưu
               <v-icon right dark> mdi-cloud-upload </v-icon>
             </v-btn>
+            <v-alert
+              :value="alert"
+              color="blue"
+              dark
+              icon="mdi-home"
+              transition="scale-transition"
+            >
+              Cập nhật thành công !
+            </v-alert>
           </div>
         </v-sheet>
       </v-card-text>
@@ -43,13 +52,13 @@ import { mapActions } from "vuex";
 export default {
   name: "Stock",
   data: () => ({
-    sticky: false,
+    alert: false,
   }),
   methods: {
     ...mapActions(["setTitlePage"]),
   },
   created() {
-    this.setTitlePage("Nhap kho");
+    this.setTitlePage("Nhập kho");
   },
 };
 </script>

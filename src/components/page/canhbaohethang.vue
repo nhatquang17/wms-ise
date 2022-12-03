@@ -32,6 +32,7 @@
   </template>
 
 <script>
+import { mapActions } from "vuex";
 export default {
     name: 'CanhBaoHetHang',
   data () {
@@ -133,13 +134,18 @@ export default {
       ],
     }
   },
+
   methods: {
     getColor (calories) {
       if (calories > 400) return 'red'
       else if (calories > 200) return 'orange'
       else return 'green'
     },
+    ...mapActions(["setTitlePage"]),
   },
+  created() {
+      this.setTitlePage("Cảnh báo hết hàng");
+    },
 }
 </script>
 
